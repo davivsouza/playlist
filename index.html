@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Playlist - Davi V. Souza</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <main>
+      <div id="container">
+        <div id="banner-music"></div>
+        <strong id="title"></strong>
+        <p id="author"></p>
+        <div id="timeMusic">
+          <p id="timeStart">00:00</p>
+          <input id="duration" type="range"  value="0" min="0" max="" oninput="time(this.value)" onmousemove="timing()">
+          <p id="timeEnd">00:00</p>
+        </div>
+        <audio id="audio">
+          <source src="" id="audioSrc" type="audio/mpeg">
+        </audio>
+        <div id="controls">
+          <img src="./assets/backwards-button.svg" alt="Backwards Button" id="backwards" onclick="backMusic()">
+          <img src="./assets/play-button.svg" alt="Play Button" id="play-pause" onclick="playPause()">
+          <img src="./assets/forward-button.svg" alt="Forwards Button" id="forwards" onclick="nextMusic()">
+        </div>
+        
+      </div>
+    </main>
+    <div id="overlay"></div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
